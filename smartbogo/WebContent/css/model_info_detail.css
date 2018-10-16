@@ -1,0 +1,35 @@
+@charset "EUC-KR";
+h1 {
+	margin-left:600px;
+}
+iframe{
+	margin-left:100px;
+}
+details {
+	width:1300px;
+	height:480px;
+	
+}
+summary {
+
+	margin-top:20px;
+	margin-left:700px;
+
+}
+td {
+	padding-left:100px;
+	}
+	table {
+
+		margin-top:40px;
+	}
+	div {
+	margin-left:100px;
+	width:1300px;
+	background-color:rgb(240,240,240);
+	}
+	img {
+	margin-left:100px;
+	width:1300px;
+	height:480px;
+	}
