@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Model_info</title>
-</head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Model_info</title>
+    <!-- 부트스트랩  CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css"  href="http://code.jquery.com/ui/1.10.0/themes/ui-lightness/jquery-ui.css" />	
+  
+	 <script language="javascript">
+  	function showPopup() { window.open("popup.html", "a", "width=400, height=300, left=100, top=50"); }
+  	</script>
+<style>
+	img{
+		width:600px;
+		hiegh:600px;
+		margin-left: 30;
+	}
+	.div1{
+	border: 1px solid rgb(234, 234, 234);
+	position: absolute;
+	width: 1000px;
+	height: 1400px;
+		}
+		
+	.div2{
+	border: 0px solid rgb(234, 234, 234);
+	position: absolute;
+	left: 600px;
+	width: 400px;
+	height: 470px;
+	top:50px;
+		}
+	.div3{
+	border: 1px solid rgb(234, 234, 234);
+	position: absolute;
+	width: 600px;
+	height: 500px;
+		}
+	.div4{
+	border: 0px solid rgb(234, 234, 234);
+	position: absolute;
+	left:600px;
+	width: 400px;
+		}
+	.div5{
+	border: 1px solid rgb(234, 234, 234);
+	position: absolute;
+	top:550px;
+	width:900px;
+	height:300px;
+	left:50px;
+		}
+	.div6{
+	border: 3px solid rgb(234, 234, 234);
+	position: absolute;
+	top:950px;
+	width:900px;
+	height:300px;
+	left:50px;
+	z-index: -1;
+		}
+	.a1{
+	position: absolute;
+	top : 470px;
+	left: 850px;
+	
+	}
+	.a2{
+	position: absolute;
+	top : 870px;
+	left : 50px;
+	}
+	.a3{
+	position: absolute;
+	top : 1000px;
+	left : 880px;
+	}
+	table{
+	border: 1px solid rgb(234, 234, 234);
+	width:900px;
+	height:300px;
+	}
+	tr{
+	border: 1px solid rgb(234, 234, 234);
+	}
+	td{
+	border: 1px solid rgb(234, 234, 234);
+	}
+	.label1{
+	position: absolute;
+	top:940px;
+	left:100px;
+	background-color: white;
+	}
+	.label2 {
 
- <img src=/model/WebContent/model_info/phone.jpg/>
+	padding-right: 325px;
+	border: 2px solid ;
+	background-color: rgb(200,200,250);
+	}
+	.radio1{
+		margin-top: 30px;
+	}
+	.btn1 {
+	position:absolute;
+	top:920px;
+	left:880px;
+	}
+</style>
+
+</head>
+<body>
+
+<div class="div1">
+<div class="div3">
+<img src="./model_info/phone.jpg" alt="갤럭시 노트9 앞뒷면 겹쳐 있는 이미지" >
+</div>
+
+<!-- 핸드폰 요약 설명하는 부분 -->
+<div class="div4">
+<h2>Samsung X9</h2>
+</div>
+<div class="div2">
+<!-- 색상 및 용량(메모리) 선택 -->
+<p><br><label class="label2">색상 선택</label>
+<form class="radio1" action="/action_page.php">
+  <input type="radio" name="color" value="black"> black<br>
+  <input type="radio" name="color" value="white"> white<br>
+  <input type="radio" name="color" value="red"> red<br>
+  <input type="radio" name="color" value="pink"> pink<br>
+</form>
+<br>
+<br>
+<label class="label2">용량 선택</label>
+<form class="radio1" action="/action_page.php">
+  <input type="radio" name="memory" value="32G"> 32G<br>
+  <input type="radio" name="memory" value="64G"> 64G<br>
+  <input type="radio" name="memory" value="128G"> 128G<br>
+</form>
+
+</div>
+<div class="div5">
+	<table class="table1">
+	<tr><td>소프트웨어</td><td>하드웨어</td><td>특징</td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td></tr>
+	</table>
+</div>
+<!-- 버튼 링크 걸어주는 부분 -->
+<a href="" class="a1"><button>판매점 및 수리점 찾기</button></a>
+
+<a href="./model_info_detail.html" class="a2"><button style="width:900px;">상세보기</button></a>
+
+<!-- 댓글쓰기 팝업 창 -->
+<input class="btn1"  type="button" value="댓글 쓰기" onclick="showPopup();" />
+
+<label class="label1" id="popup">댓글 게시판</label>
+<div class="div6">
+</div>
+</div>
 
 </body>
 </html>
