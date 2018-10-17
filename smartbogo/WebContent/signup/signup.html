@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 | 스맛보고</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scable=no">
+    
+    <!-- 부트스트랩  CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css"  href="http://code.jquery.com/ui/1.10.0/themes/ui-lightness/jquery-ui.css" />	
+  
+  	<link rel="stylesheet" type="text/css" href="./css/signup.css"/>
+
+	<!-- 제이쿼리  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript"   src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<!-- 부트스트랩 JS  -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/signup.js"></script>
+</head>
+<body>
+
+
+	<div class="container">
+	
+		<div class="header">
+			 <h1>스맛보고</h1>
+		</div>
+		
+		<div class="jumbotron">
+			<div class="custom-control custom-checkbox">
+		    	<input type="checkbox" class="custom-control-input" id="use_agree_tf">
+		    	<label class="custom-control-label" for="use_agree">이용약관 동의</label>
+			</div>
+		
+			<textarea class="form-control" rows="7" readonly>
+				스맛보고 | 이용약관
+				1. 이용약관1
+				2. 이용약관2
+				3. 이용약관3
+				4. 이용약관4
+			</textarea>
+		
+			<p>	
+			<div class="custom-control custom-checkbox">
+		    	<input type="checkbox" class="custom-control-input" id="user_info_tf">
+		    	<label class="custom-control-label" for="user_info">개인정보 수집 및 이용에 대한 안내</label>
+			</div>
+			
+			<textarea class="form-control" rows="7" readonly>
+				스맛보고 | 개인정보 수집 및 이용에 대한 안내
+				1. 개인정보 수집
+				2. 개인정보 이용내역
+				3. 기타 안내 사항
+				4. 연락처
+			</textarea>
+			
+			<p style="padding:10px">
+		
+			<div class="btn-group btn-group-justified">
+				<a href="#" class="btn btn-default">비동의</a>
+				<a href="#" class="btn btn-primary">동의</a>
+			</div>
+		</div>
+		
+		<div class="footer">
+		
+		</div>
+	</div>
+</body>
+</html>
