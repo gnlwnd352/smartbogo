@@ -165,20 +165,50 @@ body {						/* index.html 의 body 부분만 */
 }
 
 .starter-template {
-	  		padding: 40px 15px;
-	  		text-align: center;
+	padding: 40px 15px;
+	text-align: center;
 }
-
 		
 /* 여기서부터는 Bootstrap 외로 추가 내용입니다. */
 
 /* 캐러셀 */
-#intro_carousel {
-	width: 105%;
+img {
+	opacity: 0.3;
+	min-height: 100%;
 }
 
-.carousel-inner {
-	opacity: 0.2;
+.intro_carousel {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+  	-moz-transform: translate(-50%, -50%);
+ 	-o-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  
+  	margin: auto;
+  	overflow: auto;
+}
+
+.form-inline { /* #intro_carousel 의 중앙 */
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+  	-moz-transform: translate(-50%, -50%);
+ 	-o-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  
+  	margin: auto;
+  	overflow: auto;
+  	z-index: 100;
+	
+}
+
+.input-group {
+	border:darkgreen 10px solid;
 }
 
 
