@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>판매점 / 수리점 찾기 | 스맛보고</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+    
+    <!-- 부트스트랩  CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css"  href="http://code.jquery.com/ui/1.10.0/themes/ui-lightness/jquery-ui.css" />	
+  
+  	<link rel="stylesheet" type="text/css" href="./css/map.css"/>
+
+	<!-- 제이쿼리  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript"   src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<!-- 부트스트랩 JS  -->
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+	<div class="wrap">
+	
+		<div class="header">
+			<div id="move_back" class="glyphicon glyphicon-chevron-left"> 돌아가기</div>
+			<h2>판매점 / 수리점 찾기</h2>
+		</div>
+		
+		<div class="container">
+		
+			<div class="row">
+				<div id="cell_name" class="col-xs-8 col-md-8 col-lg-10">휴대폰 이름</div>
+				<div id="map_filters" class="col-xs-4 col-md-4 col-lg-2">
+					<div class="custom-control custom-checkbox">
+				    	<input type="checkbox" class="custom-control-input" id="cell_buy">
+				    	<label class="custom-control-label" for="use_agree">판매점 찾기</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+				    	<input type="checkbox" class="custom-control-input" id="cell_buy">
+				    	<label class="custom-control-label" for="use_agree">수리점 찾기</label>
+					</div>
+				</div>
+			</div>
+				
+				<p>
+				
+			<div class="map_wrap">
+				<!-- 지도타입 컨트롤 div 입니다 -->
+				<div id="map" style="width:100%;height:100%;position:relative;overflow:auto;border:yellowgreen 2px solid"></div>
+				<!-- 다음지도 API -->
+				<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=06862bfea03a51c27c267f089800f079&libraries=services,clusterer,drawing"></script>
+				<script type="text/javascript" src="js/map.js"></script> 
+				    
+				<div class="custom_typecontrol radius_border">
+					<span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+					<span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+				</div>
+				<!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+				<div class="custom_zoomcontrol radius_border"> 
+					<span onclick="zoomIn()"><img src="http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+					<span onclick="zoomOut()"><img src="http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+		
+		</div>
+	</div>
+	
+</body>
+</html>
