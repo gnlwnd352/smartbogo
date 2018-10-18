@@ -29,6 +29,9 @@
     
  	<link rel="stylesheet" href="./css/index.css">
  	<script type="text/javascript" src="js/index.js"></script>
+ 	
+ 	<!-- 로그인시 팝업 -->
+ 	<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
   </head>
   <body style="overflow:hidden">
 	  <div class="container_fluid">
@@ -54,8 +57,8 @@
 	          </ul>
 	          
 	          <ul class="nav navbar-nav navbar-right">
-	      		<li><a href="#"><span class="glyphicon glyphicon-user"></span> 회원가입</a></li>
-	      		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
+	      		<li><a href="../signup/signup.html"><span class="glyphicon glyphicon-user"></span> 회원가입</a></li>
+	      		<li><a href="#" id="login_p"><span class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
 	    	  </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
@@ -89,6 +92,9 @@
 	  		</div>
 	  	</div> <!-- 캐러셀 끝 -->
 	  	
+	  	<div id="login_section">
+	  		<div id="container"></div>
+	  	</div>
 	  	
 
      </div>

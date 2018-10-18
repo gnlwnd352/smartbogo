@@ -211,4 +211,16 @@ img {
 	border:darkgreen 10px solid;
 }
 
+#container {
+	margin: auto;
+	overflow: auto;
+}
+
+/* bPopup 관련 */
+iframe {
+	border: powderblue 5px solid;
+	min-width: 350px;
+	min-height: 260px;
+}
+
 
