@@ -23,6 +23,10 @@ $(function() {
 			$("#agree").attr({
 				"class": "btn btn-primary"
 			});
+			
+			$("#agree").attr({
+				"href" : "../index.html"
+			});
 		} else {
 			$("#agree").attr({
 				"class": "btn btn-default active"
@@ -41,6 +45,10 @@ $(function() {
 			$("#agree").attr({
 				"class": "btn btn-primary"
 			});
+			
+			$("#agree").attr({
+				"href" : "../index.html"
+			});
 		} else {
 			$("#agree").attr({
 				"class": "btn btn-default active"
@@ -53,6 +61,10 @@ $(function() {
 			$("#agree").attr({
 				"class": "btn btn-primary"
 			});
+			
+			$("#agree").attr({
+				"href" : "../index.html"
+			});
 		} else {
 			$("#agree").attr({
 				"class": "btn btn-default active"
@@ -64,6 +76,10 @@ $(function() {
 		if (cbUseAgree.is(":checked") == true && cbInfoAgree.is(":checked") == true) {
 			$("#agree").attr({
 				"class": "btn btn-primary"
+			});
+			
+			$("#agree").attr({
+				"href" : "../index.html"
 			});
 		} else {
 			$("#agree").attr({
@@ -79,21 +95,25 @@ $(function() {
 	});
 	
 	$("#agree").click(function(){
-		// 동의
-		// "smartbogo_test" 는 회원가입시 입력받을 아이디
 		
-//		$.cookie("id", "smartbogo_test");
-		// localhost 테스트 (1)
+		if (cbUseAgree.is(":checked") == true && cbInfoAgree.is(":checked") == true) {
+			// 동의
+			// "smartbogo_test" 는 회원가입시 입력받을 아이디
+			
+//			$.cookie("id", "smartbogo_test");
+			// localhost 테스트 (1)
+			
+			$.cookie("id", "smartbogo_test", {
+				path: "/"
+			}); // localhost 테스트 (2)
+			
+//			$.cookie("id", "smartbogo_test", {
+//				path: "/", domain: "wanggilim.github.io/smartbogo"
+//			}); // Github Pages 테스트
+			
+			alert('가입을 환영합니다');
+		}
 		
-		$.cookie("id", "smartbogo_test", {
-			path: "/"
-		}); // localhost 테스트 (2)
-		
-//		$.cookie("id", "smartbogo_test", {
-//			path: "/", domain: "wanggilim.github.io/smartbogo"
-//		}); // Github Pages 테스트
-		
-		alert('가입을 환영합니다');
 	});
 	
 });
