@@ -13,7 +13,7 @@ $(function() {
             transition: 'slideDown',
 			content: 'iframe',
 			contentContainer: '#container',
-			loadUrl: '../signin/signin.html'
+			loadUrl: './signin/signin.html'
 		});
 	});
 });
