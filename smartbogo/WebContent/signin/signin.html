@@ -19,12 +19,15 @@
 	<!-- 부트스트랩 JS  -->
 	<script src="js/bootstrap.min.js"></script>
 	
+	<!-- 쿠키 라이브러리 -->
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	
 	<script src="js/signin.js"></script>
 </head>
 <body>
 	<div class="container">
 
-      <form class="form-signin">
+      <form class="form-signin" method="post" action="../index.html" target="_parent">
         <h2 class="form-signin-heading">로그인</h2>
         <input type="text" id="id" class="form-control" placeholder="아이디" required autofocus>
         <input type="password" id="pw" class="form-control" placeholder="비밀번호" required>
@@ -33,7 +36,7 @@
             <input type="checkbox" value="autologin"> 자동 로그인
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
+        <button id="btn_signin" class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
       </form>
 
     </div> <!-- /container -->
