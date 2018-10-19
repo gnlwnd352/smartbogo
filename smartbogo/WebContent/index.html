@@ -32,6 +32,9 @@
  	
  	<!-- 로그인시 팝업 -->
  	<script type="text/javascript" src="./intro/js/jquery.bpopup.min.js"></script>
+ 	
+ 	<!-- 쿠키 라이브러리 -->
+ 	<script type="text/javascript" src="./intro/js/jquery.cookie.js"></script>
   </head>
   <body style="overflow:hidden">
 	  <div class="container_fluid">
@@ -56,10 +59,9 @@
 	            <li><a href="./map/map.html">판매점 수리점 찾기</a></li>
 	          </ul>
 	          
-	          <ul class="nav navbar-nav navbar-right">
-	      		<li><a href="./signup/signup.html"><span class="glyphicon glyphicon-user"></span> 회원가입</a></li>
-	      		<li><a href="#" id="login_p"><span class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
-	    	  </ul>
+	         <ul id="loginbar" class="nav navbar-nav navbar-right">
+	         	<!-- 로그인 영역 -->
+	    	 </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </nav>
