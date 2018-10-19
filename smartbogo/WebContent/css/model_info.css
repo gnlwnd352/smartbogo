@@ -1,0 +1,98 @@
+@charset "EUC-KR";
+
+	img{
+		width:600px;
+		hiegh:600px;
+		margin-left: 30;
+	}
+	.div1{
+	border: 1px solid rgb(234, 234, 234);
+	position: absolute;
+	width: 1000px;
+	height: 1400px;
+		}
+		
+	.div2{
+	border: 0px solid rgb(234, 234, 234);
+	position: absolute;
+	left: 600px;
+	width: 400px;
+	height: 470px;
+	top:50px;
+		}
+	.div3{
+	border: 1px solid rgb(234, 234, 234);
+	position: absolute;
+	width: 600px;
+	height: 500px;
+		}
+	.div4{
+	border: 0px solid rgb(234, 234, 234);
+	position: absolute;
+	left:600px;
+	width: 400px;
+		}
+	.div5{
+	border: 1px solid rgb(234, 234, 234);
+	position: absolute;
+	top:550px;
+	width:900px;
+	height:300px;
+	left:50px;
+		}
+	.div6{
+	border: 3px solid rgb(234, 234, 234);
+	position: absolute;
+	top:950px;
+	width:900px;
+	height:300px;
+	left:50px;
+	z-index: -1;
+		}
+	.a1{
+	position: absolute;
+	top : 470px;
+	left: 850px;
+	
+	}
+	.a2{
+	position: absolute;
+	top : 870px;
+	left : 50px;
+	}
+	.a3{
+	position: absolute;
+	top : 1000px;
+	left : 880px;
+	}
+	table{
+	border: 1px solid rgb(234, 234, 234);
+	width:900px;
+	height:300px;
+	}
+	tr{
+	border: 1px solid rgb(234, 234, 234);
+	}
+	td{
+	border: 1px solid rgb(234, 234, 234);
+	}
+	.label1{
+	position: absolute;
+	top:940px;
+	left:100px;
+	background-color: white;
+	}
+	.label2 {
+
+	padding-right: 325px;
+	border: 2px solid ;
+	background-color: rgb(200,200,250);
+	}
+	.radio1{
+		margin-top: 30px;
+	}
+	.btn1 {
+	position:absolute;
+	top:920px;
+	left:880px;
+	}
